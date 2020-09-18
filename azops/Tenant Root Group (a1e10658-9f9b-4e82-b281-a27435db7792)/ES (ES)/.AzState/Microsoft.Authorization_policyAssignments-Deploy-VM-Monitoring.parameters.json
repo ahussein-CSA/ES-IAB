@@ -1,0 +1,37 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "principalId": "409107a9-fe60-4144-ba18-18a34015fd1e",
+          "tenantId": "a1e10658-9f9b-4e82-b281-a27435db7792",
+          "type": "SystemAssigned"
+        },
+        "Location": "eastus",
+        "Name": "Deploy-VM-Monitoring",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/ES/providers/Microsoft.Authorization/policyAssignments/Deploy-VM-Monitoring",
+        "Properties": {
+          "Description": "Deploy-VM-Monitoring",
+          "DisplayName": "Deploy-VM-Monitoring",
+          "NotScopes": null,
+          "Parameters": {
+            "logAnalytics_1": {
+              "value": "/subscriptions/b39b2f45-43d0-442d-bc15-3124533511ce/resourcegroups/es-mgmt/providers/microsoft.operationalinsights/workspaces/es-la-b39b2f45-43d0-442d-bc15-3124533511ce"
+            }
+          },
+          "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/55f3eceb-5573-4f18-9695-226972c6d74a",
+          "Scope": "/providers/Microsoft.Management/managementGroups/ES"
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/ES/providers/Microsoft.Authorization/policyAssignments/Deploy-VM-Monitoring",
+        "ResourceName": "Deploy-VM-Monitoring",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
+      }
+    }
+  }
+}
